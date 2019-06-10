@@ -2045,7 +2045,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 375px;
+		/* width: 375px; */
 	}
 
 		#header .top {
@@ -2195,7 +2195,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 375px;
+		margin-left: 275px;
 	}
 
 		#main > section {
@@ -2372,7 +2372,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
