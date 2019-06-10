@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 36px;
+}
+header, main, footer{
+    width: 480px;
+}
+
+header{
+    height: 75px;
+    background-color: blue;
+}
+
+section {
+    background-color: purple;
+    height: 150px;
+}
+
+main > div > div > div{
+    height: 125px;
+    width: 100%;
+}
+
+div:first-of-type{
+    background-color: yellow;
+}
+
+div:nth-of-type(2){
+    background-color: darkblue
+}
+
+p{
+    height: 250px;
+    width: 50%;
+    background-color: aqua;
+}
+
+p:first-of-type{
+    background-color: pink;
+}
+p:nth-of-type(2){
+    background-color: brown;
+}
+
+p:nth-of-type(3){
+    background-color: yellow;
+}
+
+p:nth-of-type(4){
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: aqua;
+}
+
+@media(min-width: 700px){
+    html{
+        background-color: gray;
+    }
+
+    header, main{
+        width: 960px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > section {
+        width: 200px;
+        height: 600px;
+    }
+
+    div.columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > div > div {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    main > div > div > div {
+        width: 380px;
+        height: 200px;
+    }
+
+    article > p{
+        width: 190px;
+    }
+
+    footer{
+        width: 760px;
+        height: 150px;
+    }
+
+}
+
